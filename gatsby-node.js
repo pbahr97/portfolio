@@ -112,3 +112,13 @@ exports.createPages = ({ graphql, actions }) => {
     // ==== END POSTS ====
   })
 }
+
+exports.modifyWebpackConfig = ({ config, _stage }) => {
+  return config.merge({
+    resolve: {
+      alias: {
+        styles: path.resolve(config._config.context, "src/styles"),
+      },
+    },
+  })
+}
