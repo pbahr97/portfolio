@@ -33,9 +33,7 @@ module.exports = {
         baseUrl: "localhost:8888/testportfolio",
         protocol: "http",
         hostingWPCOM: false,
-
         useACF: true,
-
         acfOptionPageIds: [],
         auth: {
           htaccess_user: "your-htaccess-username",
@@ -64,6 +62,7 @@ module.exports = {
           "**/tags",
           "**/taxonomies",
           "**/users",
+          "**/menus",
         ],
         excludedRoutes: ["**/posts/1456"],
         normalizer: function({ entities }) {
